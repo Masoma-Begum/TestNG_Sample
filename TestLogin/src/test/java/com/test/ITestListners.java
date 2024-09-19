@@ -13,7 +13,7 @@ public class ITestListners extends BaseUI implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 	  try {
 		  
-		captureScreen(result.getTestContext().getName()+"_"+result.getMethod()+".jpg");
+		captureScreen(result.getTestContext().getName()+"_"+result.getMethod());
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
