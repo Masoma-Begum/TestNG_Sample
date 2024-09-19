@@ -36,7 +36,7 @@ public class BaseUI {
 	public void manageCapture(ITestResult testResult) throws IOException {
 		if(testResult.getStatus() == ITestResult.FAILURE) {
 			System.out.println(testResult.getTestContext().getName()+"_"+testResult.getMethod().getMethodName());
-			captureScreen(testResult.getTestContext().getName()+"_"+testResult.getMethod().getMethodName()+".JPG");
+			captureScreen(testResult.getTestContext().getName()+"_"+testResult.getMethod().getMethodName());
 		}
 	}
 	
