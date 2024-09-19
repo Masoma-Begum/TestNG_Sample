@@ -61,7 +61,7 @@ public class BaseUI {
 	  String folder = date.format(folderFormatter);
 	  
 		File sourceFile =  ((RemoteWebDriver) driver).getScreenshotAs(OutputType.FILE);
-	    File destFile = new File("./Screenshots/"+folder+fileName+captureImage);
+	    File destFile = new File("./Screenshots/"+folder+fileName+captureImage+".jpg");
 		FileUtils.copyFile(sourceFile,destFile);
 		
 	  
